@@ -8,45 +8,46 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyecto1
+namespace Proyecto._1
 {
-    public partial class frmCalculadora : Form
+    public partial class Form1 : Form
     {
         double Num1 = 0;
         double Num2 = 0;
         char Operador;
-
-        public frmCalculadora()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        // Manejador para los botones numéricos
-        private void AgregarNumero(object sender, EventArgs e)
+        private void AgregarNumero (object sender, EventArgs e)
         {
             var boton = ((Button)sender);
 
-            if (txtResultados.Text == "0")
-                txtResultados.Text = "";
+            if (txtResultado.Text == "0")
+                txtResultado.Text = "";
 
-            txtResultados.Text += boton.Text;
+            txtResultado.Text += boton.Text;
         }
+
         private void btnPunto_Click(object sender, EventArgs e)
         {
-            Num1 = Convert.ToDouble(txtResultados.Text);
-            Num1 *= -1;
-            txtResultados.Text = Num1.ToString();
+            if (!txtResultado.Text.Contains("."))
+            {
+                txtResultado.Text += ".";
+            }
         }
+
         private void btnSignos_Click(object sender, EventArgs e)
         {
-            Num1 = Convert.ToDouble(txtResultados.Text);
+            Num1 = Convert.ToDouble(txtResultado.Text);
             Num1 *= -1;
-            txtResultados.Text = Num1.ToString();
+            txtResultado.Text = Num1.ToString();
         }
 
         private void btnCE_Click(object sender, EventArgs e)
         {
-            txtResultados.Text = "0";
+            txtResultado.Text = "0";
         }
 
         private void btnC_Click(object sender, EventArgs e)
@@ -54,40 +55,40 @@ namespace Proyecto1
             Num1 = 0;
             Num2 = 0;
             Operador = '\0';
-            txtResultados.Text = "0";
+            txtResultado.Text = "0";
         }
 
         private void btnSuma_Click(object sender, EventArgs e)
         {
-            Num1 = Convert.ToDouble(txtResultados.Text);
+            Num1 = Convert.ToDouble(txtResultado.Text);
             Operador = '+';
-            txtResultados.Text = "0";
+            txtResultado.Text = "0";
         }
 
         private void btnResta_Click(object sender, EventArgs e)
         {
-            Num1 = Convert.ToDouble(txtResultados.Text);
+            Num1 = Convert.ToDouble(txtResultado.Text);
             Operador = '-';
-            txtResultados.Text = "0";
+            txtResultado.Text = "0";
         }
 
-        private void btnMultiplica_Click(object sender, EventArgs e)
+        private void btnMulti_Click(object sender, EventArgs e)
         {
-            Num1 = Convert.ToDouble(txtResultados.Text);
+            Num1 = Convert.ToDouble(txtResultado.Text);
             Operador = '*';
-            txtResultados.Text = "0";
+            txtResultado.Text = "0";
         }
 
-        private void btnDivision_Click(object sender, EventArgs e)
+        private void btnDividir_Click(object sender, EventArgs e)
         {
-            Num1 = Convert.ToDouble(txtResultados.Text);
+            Num1 = Convert.ToDouble(txtResultado.Text);
             Operador = '/';
-            txtResultados.Text = "0";
+            txtResultado.Text = "0";
         }
 
         private void btnResultado_Click(object sender, EventArgs e)
         {
-            Num2 = Convert.ToDouble(txtResultados.Text);
+            Num2 = Convert.ToDouble(txtResultado.Text);
             double resultado = 0;
 
             switch (Operador)
@@ -114,9 +115,8 @@ namespace Proyecto1
                     break;
             }
 
-            txtResultados.Text = resultado.ToString();
+            txtResultado.Text = resultado.ToString();
             Num1 = resultado;  // Para seguir con la operación con el resultado si se desea.
         }
     }
-    }
-    
+}

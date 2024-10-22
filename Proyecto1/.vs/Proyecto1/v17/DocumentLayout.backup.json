@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79209969-1C26-4FC2-A512-908DD2FA10A6}|Proyecto1\\Proyecto1.csproj|C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto1\\proyecto1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{79209969-1C26-4FC2-A512-908DD2FA10A6}|Proyecto1\\Proyecto1.csproj|solutionrelative:proyecto1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{79209969-1C26-4FC2-A512-908DD2FA10A6}|Proyecto1\\Proyecto1.csproj|c:\\users\\amirr\\source\\repos\\proyecto1\\proyecto1\\proyecto1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79209969-1C26-4FC2-A512-908DD2FA10A6}|Proyecto1\\Proyecto1.csproj|solutionrelative:proyecto1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79209969-1C26-4FC2-A512-908DD2FA10A6}|Proyecto1\\Proyecto1.csproj|C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto1\\proyecto1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79209969-1C26-4FC2-A512-908DD2FA10A6}|Proyecto1\\Proyecto1.csproj|solutionrelative:proyecto1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto1\\Proyecto1\\Form1.cs",
               "RelativeDocumentMoniker": "Proyecto1\\Form1.cs",
@@ -46,13 +46,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto1\\Proyecto1\\Form1.cs",
               "RelativeDocumentMoniker": "Proyecto1\\Form1.cs",
               "ToolTip": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto1\\Proyecto1\\Form1.cs",
               "RelativeToolTip": "Proyecto1\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAADwv3YAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T01:31:55.637Z",
               "EditorCaption": ""
