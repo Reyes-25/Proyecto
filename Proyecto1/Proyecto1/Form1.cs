@@ -31,21 +31,6 @@ namespace Proyecto1
             Numero1 = Convert.ToDouble(txtResultado.Text);
             Operador = Convert.ToChar(boton.Tag);
 
-            if (Operador == '²')
-            {
-                Numero1 = Math.Pow(Numero1, 2);
-                txtResultado.Text = Numero1.ToString();
-            }
-            else if (Operador == '√')
-            {
-                Numero1 = Math.Sqrt(Numero1);
-                txtResultado.Text = Numero1.ToString();
-            }
-            else
-            {
-                txtResultado.Text = "0";
-            }
-        }
             // Botón para borrar todo
             private void btnBorrar_Click(object sender, EventArgs e)
         {
