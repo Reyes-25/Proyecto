@@ -39,7 +39,7 @@ namespace Proyecto1
 
         private void btnIgual_Click(object sender, EventArgs e)
         {
-            // Proceso para calcular el resultado de la operación
+            
             try
             {
                 var resultadoOperacion = new DataTable().Compute(txtResultado.Text, null);
