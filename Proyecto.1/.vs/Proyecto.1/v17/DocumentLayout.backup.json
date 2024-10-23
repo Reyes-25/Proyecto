@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\amirr\\source\\repos\\Proyecto.1\\",
+  "WorkspaceRootPath": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1E73EEAE-535A-4FC7-965B-67A101696EEE}|Proyecto.1\\Proyecto.1.csproj|c:\\users\\amirr\\source\\repos\\proyecto.1\\proyecto.1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1E73EEAE-535A-4FC7-965B-67A101696EEE}|Proyecto.1\\Proyecto.1.csproj|c:\\users\\amirr\\source\\repos\\proyecto1\\proyecto.1\\proyecto.1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E73EEAE-535A-4FC7-965B-67A101696EEE}|Proyecto.1\\Proyecto.1.csproj|solutionrelative:proyecto.1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E73EEAE-535A-4FC7-965B-67A101696EEE}|Proyecto.1\\Proyecto.1.csproj|c:\\users\\amirr\\source\\repos\\proyecto.1\\proyecto.1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1E73EEAE-535A-4FC7-965B-67A101696EEE}|Proyecto.1\\Proyecto.1.csproj|C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.1\\proyecto.1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1E73EEAE-535A-4FC7-965B-67A101696EEE}|Proyecto.1\\Proyecto.1.csproj|solutionrelative:proyecto.1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -36,9 +36,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\amirr\\source\\repos\\Proyecto.1\\Proyecto.1\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.1\\Proyecto.1\\Form1.cs",
               "RelativeDocumentMoniker": "Proyecto.1\\Form1.cs",
-              "ToolTip": "C:\\Users\\amirr\\source\\repos\\Proyecto.1\\Proyecto.1\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.1\\Proyecto.1\\Form1.cs [Design]",
               "RelativeToolTip": "Proyecto.1\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T01:07:37.605Z",
@@ -48,11 +48,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\amirr\\source\\repos\\Proyecto.1\\Proyecto.1\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.1\\Proyecto.1\\Form1.cs",
               "RelativeDocumentMoniker": "Proyecto.1\\Form1.cs",
-              "ToolTip": "C:\\Users\\amirr\\source\\repos\\Proyecto.1\\Proyecto.1\\Form1.cs",
+              "ToolTip": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.1\\Proyecto.1\\Form1.cs",
               "RelativeToolTip": "Proyecto.1\\Form1.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAwFMAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAkwFMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T00:49:21.347Z",
               "EditorCaption": ""

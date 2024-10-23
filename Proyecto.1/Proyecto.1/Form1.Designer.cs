@@ -73,6 +73,7 @@
             this.btnRaiz.TabIndex = 1;
             this.btnRaiz.Text = "√";
             this.btnRaiz.UseVisualStyleBackColor = true;
+            this.btnRaiz.Click += new System.EventHandler(this.btnRaiz_Click);
             // 
             // b1
             // 
@@ -183,6 +184,7 @@
             this.btnAlCuadrado.Tag = "²";
             this.btnAlCuadrado.Text = "x²";
             this.btnAlCuadrado.UseVisualStyleBackColor = true;
+            this.btnAlCuadrado.Click += new System.EventHandler(this.btnAlCuadrado_Click);
             // 
             // b2
             // 
@@ -296,7 +298,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(321, 450);
+            this.ClientSize = new System.Drawing.Size(197, 230);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.btnPorciento);
             this.Controls.Add(this.btnDividir);

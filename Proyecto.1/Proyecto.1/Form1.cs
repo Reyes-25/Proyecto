@@ -118,5 +118,41 @@ namespace Proyecto._1
             txtResultado.Text = resultado.ToString();
             Num1 = resultado;  // Para seguir con la operación con el resultado si se desea.
         }
+
+        private void btnRaiz_Click(object sender, EventArgs e)
+        {
+            if (double.TryParse(txtResultado.Text, out double num))
+            {
+                if (num >= 0)
+                {                    
+                    num = Math.Sqrt(num);
+                    txtResultado.Text = num.ToString();
+                }
+                else
+                {
+                    txtResultado.Text = "ERROR";
+                }
+            }
+            else
+            {                
+                txtResultado.Text = "ERROR";
+            }
+        }
+
+        private void btnAlCuadrado_Click(object sender, EventArgs e)
+        {
+            if (double.TryParse(txtResultado.Text, out double num))
+            {
+                // Eleva al cuadrado y actualiza el TextBox con el resultado
+                num = Math.Pow(num, 2);
+                txtResultado.Text = num.ToString();
+            }
+            else
+            {
+                // Si el contenido no es un número válido, muestra "ERROR"
+                txtResultado.Text = "ERROR";
+            }
+
+        }
     }
 }
