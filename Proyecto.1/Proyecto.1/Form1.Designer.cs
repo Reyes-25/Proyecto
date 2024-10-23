@@ -50,8 +50,8 @@
             this.btnResultado = new System.Windows.Forms.Button();
             this.btnC = new System.Windows.Forms.Button();
             this.btnDividir = new System.Windows.Forms.Button();
-            this.btnPorciento = new System.Windows.Forms.Button();
             this.btnMostrar = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // txtResultado
@@ -272,18 +272,9 @@
             this.btnDividir.Name = "btnDividir";
             this.btnDividir.Size = new System.Drawing.Size(40, 23);
             this.btnDividir.TabIndex = 21;
-            this.btnDividir.Text = "/";
+            this.btnDividir.Text = "÷";
             this.btnDividir.UseVisualStyleBackColor = true;
             this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
-            // 
-            // btnPorciento
-            // 
-            this.btnPorciento.Location = new System.Drawing.Point(104, 84);
-            this.btnPorciento.Name = "btnPorciento";
-            this.btnPorciento.Size = new System.Drawing.Size(40, 23);
-            this.btnPorciento.TabIndex = 22;
-            this.btnPorciento.Text = "%";
-            this.btnPorciento.UseVisualStyleBackColor = true;
             // 
             // btnMostrar
             // 
@@ -294,13 +285,21 @@
             this.btnMostrar.Text = "Mostrar";
             this.btnMostrar.UseVisualStyleBackColor = true;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(196, 55);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(169, 160);
+            this.listBox1.TabIndex = 24;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(197, 230);
+            this.ClientSize = new System.Drawing.Size(369, 230);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnMostrar);
-            this.Controls.Add(this.btnPorciento);
             this.Controls.Add(this.btnDividir);
             this.Controls.Add(this.btnC);
             this.Controls.Add(this.btnResultado);
@@ -354,8 +353,8 @@
         private System.Windows.Forms.Button btnResultado;
         private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button btnDividir;
-        private System.Windows.Forms.Button btnPorciento;
         private System.Windows.Forms.Button btnMostrar;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

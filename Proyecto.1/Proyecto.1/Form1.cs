@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace Proyecto._1
@@ -15,12 +9,15 @@ namespace Proyecto._1
         double Num1 = 0;
         double Num2 = 0;
         char Operador;
+        string connectionString = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=CalculadoraDB;Integrated Security=True;";
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void AgregarNumero (object sender, EventArgs e)
+        // Este método agrega el número presionado en la calculadora
+        private void AgregarNumero(object sender, EventArgs e)
         {
             var boton = ((Button)sender);
 
@@ -30,6 +27,7 @@ namespace Proyecto._1
             txtResultado.Text += boton.Text;
         }
 
+        // Botón para agregar punto decimal
         private void btnPunto_Click(object sender, EventArgs e)
         {
             if (!txtResultado.Text.Contains("."))
@@ -38,6 +36,7 @@ namespace Proyecto._1
             }
         }
 
+        // Botón para cambiar el signo del número
         private void btnSignos_Click(object sender, EventArgs e)
         {
             Num1 = Convert.ToDouble(txtResultado.Text);
@@ -45,11 +44,13 @@ namespace Proyecto._1
             txtResultado.Text = Num1.ToString();
         }
 
+        // Botón para borrar el último cálculo (reset)
         private void btnCE_Click(object sender, EventArgs e)
         {
             txtResultado.Text = "0";
         }
 
+        // Botón para borrar toda la operación actual
         private void btnC_Click(object sender, EventArgs e)
         {
             Num1 = 0;
@@ -58,6 +59,7 @@ namespace Proyecto._1
             txtResultado.Text = "0";
         }
 
+        // Operaciones matemáticas básicas
         private void btnSuma_Click(object sender, EventArgs e)
         {
             Num1 = Convert.ToDouble(txtResultado.Text);
@@ -86,6 +88,7 @@ namespace Proyecto._1
             txtResultado.Text = "0";
         }
 
+        // Botón para calcular el resultado
         private void btnResultado_Click(object sender, EventArgs e)
         {
             Num2 = Convert.ToDouble(txtResultado.Text);
@@ -116,17 +119,39 @@ namespace Proyecto._1
             }
 
             txtResultado.Text = resultado.ToString();
-            Num1 = resultado;  // Para seguir con la operación con el resultado si se desea.
+            GuardarHistorial(Operador.ToString(), Num1, Num2, resultado); // Guardar la operación y resultado
+            Num1 = resultado;
         }
 
+        // Botón para elevar al cuadrado el número
+        private void btnAlCuadrado_Click(object sender, EventArgs e)
+        {
+            if (double.TryParse(txtResultado.Text, out double num))
+            {
+                double resultado = Math.Pow(num, 2);
+                txtResultado.Text = resultado.ToString();
+
+                // Guardar la operación "num^2" en la base de datos
+                GuardarHistorial($"{num}^2", num, 0, resultado);
+            }
+            else
+            {
+                txtResultado.Text = "ERROR";
+            }
+        }
+
+        // Botón para calcular la raíz cuadrada
         private void btnRaiz_Click(object sender, EventArgs e)
         {
             if (double.TryParse(txtResultado.Text, out double num))
             {
                 if (num >= 0)
-                {                    
-                    num = Math.Sqrt(num);
-                    txtResultado.Text = num.ToString();
+                {
+                    double resultado = Math.Sqrt(num);
+                    txtResultado.Text = resultado.ToString();
+
+                    // Guardar la operación "√num" en la base de datos
+                    GuardarHistorial($"√{num}", num, 0, resultado);
                 }
                 else
                 {
@@ -134,25 +159,68 @@ namespace Proyecto._1
                 }
             }
             else
-            {                
+            {
                 txtResultado.Text = "ERROR";
             }
         }
 
-        private void btnAlCuadrado_Click(object sender, EventArgs e)
+        // Método para guardar el historial de operaciones en la base de datos
+        private void GuardarHistorial(string operacion, double num1, double num2, double resultado)
         {
-            if (double.TryParse(txtResultado.Text, out double num))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                // Eleva al cuadrado y actualiza el TextBox con el resultado
-                num = Math.Pow(num, 2);
-                txtResultado.Text = num.ToString();
-            }
-            else
-            {
-                // Si el contenido no es un número válido, muestra "ERROR"
-                txtResultado.Text = "ERROR";
-            }
+                string query = "INSERT INTO HistorialCalculos (operacion, resultado) VALUES (@operacion, @resultado)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@operacion", operacion);
+                command.Parameters.AddWithValue("@resultado", resultado);
 
+                try
+                {
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al guardar el historial: " + ex.Message);
+                }
+            }
+        }
+
+        // Botón para mostrar el historial de operaciones
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            MostrarHistorial();
+        }
+
+        // Método para cargar y mostrar los datos en el ListBox
+        private void MostrarHistorial()
+        {
+            listBox1.Items.Clear(); // Limpiar el ListBox antes de cargar los datos
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT operacion, resultado FROM HistorialCalculos"; // Consulta para obtener las operaciones y resultados
+                SqlCommand command = new SqlCommand(query, connection);
+
+                try
+                {
+                    connection.Open(); // Abre la conexión a la base de datos
+                    SqlDataReader reader = command.ExecuteReader(); // Ejecuta la consulta y obtiene los resultados
+
+                    while (reader.Read()) // Lee los resultados fila por fila
+                    {
+                        string operacion = reader["operacion"].ToString(); // Obtiene el valor de la columna "operacion"
+                        string resultado = reader["resultado"].ToString(); // Obtiene el valor de la columna "resultado"
+                        listBox1.Items.Add($"{operacion} = {resultado}"); // Muestra cada operación y resultado en el ListBox
+                    }
+
+                    reader.Close(); // Cierra el lector de datos
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al cargar el historial: " + ex.Message); // Muestra un mensaje de error si ocurre algún problema
+                }
+            }
         }
     }
 }
