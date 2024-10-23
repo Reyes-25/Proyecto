@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{79209969-1C26-4FC2-A512-908DD2FA10A6}|Proyecto1\\Proyecto1.csproj|solutionrelative:proyecto1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79209969-1C26-4FC2-A512-908DD2FA10A6}|Proyecto1\\Proyecto1.csproj|c:\\users\\amirr\\source\\repos\\proyecto\\proyecto1\\proyecto1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{79209969-1C26-4FC2-A512-908DD2FA10A6}|Proyecto1\\Proyecto1.csproj|C:\\Users\\amirr\\source\\repos\\Proyecto\\Proyecto1\\proyecto1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{79209969-1C26-4FC2-A512-908DD2FA10A6}|Proyecto1\\Proyecto1.csproj|solutionrelative:proyecto1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -18,8 +18,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,14 +32,10 @@
               "RelativeDocumentMoniker": "Proyecto1\\Form1.cs",
               "ToolTip": "C:\\Users\\amirr\\source\\repos\\Proyecto\\Proyecto1\\Proyecto1\\Form1.cs",
               "RelativeToolTip": "Proyecto1\\Form1.cs",
-              "ViewState": "AgIAAOoAAAAAAAAAAIA1wAEBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T01:31:55.637Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
@@ -46,8 +46,7 @@
               "ToolTip": "C:\\Users\\amirr\\source\\repos\\Proyecto\\Proyecto1\\Proyecto1\\Form1.cs [Design]",
               "RelativeToolTip": "Proyecto1\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T22:59:17.396Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-20T22:59:17.396Z"
             }
           ]
         }

@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Proyecto1
@@ -22,7 +16,8 @@ namespace Proyecto1
             InitializeComponent();
         }
 
-        private void btn1_Click(object sender, EventArgs e)
+        // Manejador único para todos los botones numéricos
+        private void btnNumero_Click(object sender, EventArgs e)
         {
             if (txtResultado.Text == "0" || operacionSeleccionada)
                 txtResultado.Clear();
@@ -32,204 +27,14 @@ namespace Proyecto1
             txtResultado.Text += btn.Text;
         }
 
-        private void btn2_Click(object sender, EventArgs e)
+        // Botón para los operadores
+        private void btnOperacion_Click(object sender, EventArgs e)
         {
-            if (txtResultado.Text == "1" || operacionSeleccionada)
-                txtResultado.Clear();
-
-            operacionSeleccionada = false;
             Button btn = (Button)sender;
-            txtResultado.Text += btn.Text;
-        }
-        private void btn3_Click(object sender, EventArgs e)
-        {
-            if (txtResultado.Text == "3" || operacionSeleccionada)
-                txtResultado.Clear();
-
-            operacionSeleccionada = false;
-            Button btn = (Button)sender;
-            txtResultado.Text += btn.Text;
-        }
-
-        private void btn4_Click(object sender, EventArgs e)
-        {
-            if (txtResultado.Text == "4" || operacionSeleccionada)
-                txtResultado.Clear();
-
-            operacionSeleccionada = false;
-            Button btn = (Button)sender;
-            txtResultado.Text += btn.Text;
-        }
-
-        private void btn5_Click(object sender, EventArgs e)
-        {
-            if (txtResultado.Text == "5" || operacionSeleccionada)
-                txtResultado.Clear();
-
-            operacionSeleccionada = false;
-            Button btn = (Button)sender;
-            txtResultado.Text += btn.Text;
-        }
-
-        private void btn6_Click(object sender, EventArgs e)
-        {
-            if (txtResultado.Text == "6" || operacionSeleccionada)
-                txtResultado.Clear();
-
-            operacionSeleccionada = false;
-            Button btn = (Button)sender;
-            txtResultado.Text += btn.Text;
-        }
-
-        private void btn7_Click(object sender, EventArgs e)
-        {
-            if (txtResultado.Text == "7" || operacionSeleccionada)
-                txtResultado.Clear();
-
-            operacionSeleccionada = false;
-            Button btn = (Button)sender;
-            txtResultado.Text += btn.Text;
-        }
-
-        private void btn8_Click(object sender, EventArgs e)
-        {
-            if (txtResultado.Text == "8" || operacionSeleccionada)
-                txtResultado.Clear();
-
-            operacionSeleccionada = false;
-            Button btn = (Button)sender;
-            txtResultado.Text += btn.Text;
-        }
-
-        private void btn9_Click(object sender, EventArgs e)
-        {
-            if (txtResultado.Text == "9" || operacionSeleccionada)
-                txtResultado.Clear();
-
-            operacionSeleccionada = false;
-            Button btn = (Button)sender;
-            txtResultado.Text += btn.Text;
-        }
-
-        private void btn0_Click(object sender, EventArgs e)
-        {
-            if (txtResultado.Text == "0" || operacionSeleccionada)
-                txtResultado.Clear();
-
-            operacionSeleccionada = false;
-            Button btn = (Button)sender;
-            txtResultado.Text += btn.Text;
-        }
-
-        private void btnSignos_Click(object sender, EventArgs e)
-        {
-            // Alterna entre signo de más y signo de menos
-            if (esMas)
-            {
-                txtResultado.Text += "+"; // Añade el signo de más
-            }
-            else
-            {
-                txtResultado.Text += "-"; // Añade el signo de menos
-            }
-
-            // Cambia el estado del signo
-            esMas = !esMas; // Alterna el valor booleano
-        }
-
-        private void btnParenInicio_Click(object sender, EventArgs e)
-        {
-            txtResultado.Text += "(";
-        }
-
-        private void btnParenFinal_Click(object sender, EventArgs e)
-        {
-            txtResultado.Text += ")";
-        }
-
-        private void btnPunto_Click(object sender, EventArgs e)
-        {
-            txtResultado.Text += ".";
-        }
-
-        private void btnRaiz_Click(object sender, EventArgs e)
-        {
-            double numero;
-            if (double.TryParse(txtResultado.Text, out numero))
-            {
-                txtResultado.Text = Math.Pow(numero, 2).ToString();
-            }
-        }
-
-        private void btnCuadrado_Click(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrEmpty(txtResultado.Text))
-            {
-                // Agrega el símbolo de exponente al TextBox
-                txtResultado.Text += "²"; // O puedes usar Unicode: "\u00B2"
-            }
-        }
-
-        private void btnPorciento_Click(object sender, EventArgs e)
-        {
-            // Verifica si el TextBox tiene un número válido y no es cero
-            if (double.TryParse(txtResultado.Text, out double numero) && numero != 0)
-            {
-                // Agrega el símbolo de porcentaje al TextBox
-                txtResultado.Text += "%"; // Puedes usar también txtNumero.Text += " %";
-            }
-        }
-
-        private void btnSumar_Click(object sender, EventArgs e)
-        {
-            operacion = "+";
+            operacion = btn.Text;
             resultado = double.Parse(txtResultado.Text);
             operacionSeleccionada = true;
-            txtResultado.Text += "+";
-        }
-
-        private void btnRestar_Click(object sender, EventArgs e)
-        {
-            operacion = "-";
-            resultado = double.Parse(txtResultado.Text);
-            operacionSeleccionada = true;
-            txtResultado.Text += "-";
-        }
-
-        private void btnMultiplicar_Click(object sender, EventArgs e)
-        {
-            operacion = "*";
-            resultado = double.Parse(txtResultado.Text);
-            operacionSeleccionada = true;
-            txtResultado.Text += "x";
-        }
-
-        private void btnDividir_Click(object sender, EventArgs e)
-        {
-            operacion = "/";
-            resultado = double.Parse(txtResultado.Text);
-            operacionSeleccionada = true;
-            txtResultado.Text += "÷";
-        }
-
-        private void btnBorrar_Click(object sender, EventArgs e)
-        {
-            txtResultado.Text = string.Empty; // Restablece todo
-        }
-
-        private void btnClearEntry_Click(object sender, EventArgs e)
-        {
-            // Verifica si hay texto en el TextBox
-            if (txtResultado.Text.Length > 0)
-            {
-                // Elimina el último carácter del TextBox
-                txtResultado.Text = txtResultado.Text.Substring(0, txtResultado.Text.Length - 1);
-            }
-        }
-
-        private void btnMostrar_Click(object sender, EventArgs e)
-        {
-
+            txtResultado.Text += operacion;
         }
 
         private void btnIgual_Click(object sender, EventArgs e)
@@ -252,6 +57,20 @@ namespace Proyecto1
             catch (Exception ex)
             {
                 MessageBox.Show("Error en la operación: " + ex.Message);
+            }
+        }
+
+        // Otros botones (limpiar, etc.)
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text = string.Empty; // Restablece todo
+        }
+
+        private void btnClearEntry_Click(object sender, EventArgs e)
+        {
+            if (txtResultado.Text.Length > 0)
+            {
+                txtResultado.Text = txtResultado.Text.Substring(0, txtResultado.Text.Length - 1);
             }
         }
     }
