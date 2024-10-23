@@ -39,7 +39,6 @@
             this.b9 = new System.Windows.Forms.Button();
             this.b8 = new System.Windows.Forms.Button();
             this.b7 = new System.Windows.Forms.Button();
-            this.btnCE = new System.Windows.Forms.Button();
             this.btnAlCuadrado = new System.Windows.Forms.Button();
             this.b2 = new System.Windows.Forms.Button();
             this.btnPunto = new System.Windows.Forms.Button();
@@ -50,8 +49,8 @@
             this.btnResultado = new System.Windows.Forms.Button();
             this.btnC = new System.Windows.Forms.Button();
             this.btnDividir = new System.Windows.Forms.Button();
-            this.btnMostrar = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.btnCE = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtResultado
@@ -165,19 +164,9 @@
             this.b7.UseVisualStyleBackColor = true;
             this.b7.Click += new System.EventHandler(this.AgregarNumero);
             // 
-            // btnCE
-            // 
-            this.btnCE.Location = new System.Drawing.Point(12, 84);
-            this.btnCE.Name = "btnCE";
-            this.btnCE.Size = new System.Drawing.Size(40, 23);
-            this.btnCE.TabIndex = 11;
-            this.btnCE.Text = "CE";
-            this.btnCE.UseVisualStyleBackColor = true;
-            this.btnCE.Click += new System.EventHandler(this.btnCE_Click);
-            // 
             // btnAlCuadrado
             // 
-            this.btnAlCuadrado.Location = new System.Drawing.Point(58, 55);
+            this.btnAlCuadrado.Location = new System.Drawing.Point(104, 84);
             this.btnAlCuadrado.Name = "btnAlCuadrado";
             this.btnAlCuadrado.Size = new System.Drawing.Size(40, 23);
             this.btnAlCuadrado.TabIndex = 12;
@@ -276,22 +265,23 @@
             this.btnDividir.UseVisualStyleBackColor = true;
             this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
             // 
-            // btnMostrar
-            // 
-            this.btnMostrar.Location = new System.Drawing.Point(104, 55);
-            this.btnMostrar.Name = "btnMostrar";
-            this.btnMostrar.Size = new System.Drawing.Size(86, 23);
-            this.btnMostrar.TabIndex = 23;
-            this.btnMostrar.Text = "Mostrar";
-            this.btnMostrar.UseVisualStyleBackColor = true;
-            // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(196, 55);
+            this.listBox1.Location = new System.Drawing.Point(196, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(169, 160);
+            this.listBox1.Size = new System.Drawing.Size(169, 212);
             this.listBox1.TabIndex = 24;
+            // 
+            // btnCE
+            // 
+            this.btnCE.Location = new System.Drawing.Point(12, 84);
+            this.btnCE.Name = "btnCE";
+            this.btnCE.Size = new System.Drawing.Size(40, 23);
+            this.btnCE.TabIndex = 11;
+            this.btnCE.Text = "CE";
+            this.btnCE.UseVisualStyleBackColor = true;
+            this.btnCE.Click += new System.EventHandler(this.btnCE_Click);
             // 
             // Form1
             // 
@@ -299,7 +289,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(369, 230);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.btnDividir);
             this.Controls.Add(this.btnC);
             this.Controls.Add(this.btnResultado);
@@ -342,7 +331,6 @@
         private System.Windows.Forms.Button b9;
         private System.Windows.Forms.Button b8;
         private System.Windows.Forms.Button b7;
-        private System.Windows.Forms.Button btnCE;
         private System.Windows.Forms.Button btnAlCuadrado;
         private System.Windows.Forms.Button b2;
         private System.Windows.Forms.Button btnPunto;
@@ -353,8 +341,8 @@
         private System.Windows.Forms.Button btnResultado;
         private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button btnDividir;
-        private System.Windows.Forms.Button btnMostrar;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btnCE;
     }
 }
 
