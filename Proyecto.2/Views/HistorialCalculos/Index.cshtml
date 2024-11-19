@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "Historial de Cálculos";
+}
+
+<h2>Historial de Cálculos</h2>
+
+<!-- Botones para filtrar -->
+<div class="filter-buttons">
+    <button id="all" class="btn btn-primary">Todos los cálculos</button>
+    <button id="sumas" class="btn btn-success">Sumas</button>
+    <button id="restas" class="btn btn-warning">Restas</button>
+    <button id="multiplicaciones" class="btn btn-info">Multiplicaciones</button>
+    <button id="divisiones" class="btn btn-danger">Divisiones</button>
+</div>
+
+<!-- Tabla para mostrar los cálculos -->
+<table class="table table-striped mt-3">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Operación</th>
+            <th>Resultado</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+        </tr>
+    </thead>
+    <tbody id="calculosTableBody">
+        <!-- Los cálculos se cargarán dinámicamente aquí -->
+    </tbody>
+</table>
+
+<!-- Formulario para agregar nuevos cálculos -->
+<h3>Agregar nuevo cálculo</h3>
+<form id="addCalculoForm">
+    <div class="form-group">
+        <label for="operacion">Operación (Ejemplo: 3 + 5):</label>
+        <input type="text" id="operacion" name="operacion" class="form-control" placeholder="Ejemplo: 3 + 5" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Agregar</button>
+</form>
+
+<script>
+    const apiUrl = "/api/HistorialCalculos";
+
+    // Función para cargar cálculos desde la API
+    function cargarCalculos(endpoint) {
+        fetch(endpoint)
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.getElementById("calculosTableBody");
+                tableBody.innerHTML = ""; // Limpiar la tabla
+
+                data.forEach(calculo => {
+                    const row = `
+                        <tr>
+                            <td>${calculo.Id}</td>
+                            <td>${calculo.Operacion}</td>
+                            <td>${calculo.Resultado}</td>
+                            <td>${new Date(calculo.FechaRegistro).toLocaleDateString()}</td>
+                            <td>${calculo.HoraRegistro}</td>
+                        </tr>
+                    `;
+                    tableBody.innerHTML += row;
+                });
+            })
+            .catch(error => console.error("Error al cargar cálculos:", error));
+    }
+
+    // Cargar todos los cálculos al cargar la página
+    cargarCalculos(apiUrl);
+
+    // Manejar filtros
+    document.getElementById("all").addEventListener("click", () => cargarCalculos(apiUrl));
+    document.getElementById("sumas").addEventListener("click", () => cargarCalculos(`${apiUrl}/sumas`));
+    document.getElementById("restas").addEventListener("click", () => cargarCalculos(`${apiUrl}/restas`));
+    document.getElementById("multiplicaciones").addEventListener("click", () => cargarCalculos(`${apiUrl}/multiplicaciones`));
+    document.getElementById("divisiones").addEventListener("click", () => cargarCalculos(`${apiUrl}/divisiones`));
+
+    // Manejar el formulario para agregar nuevos cálculos
+    document.getElementById("addCalculoForm").addEventListener("submit", event => {
+        event.preventDefault();
+
+        const operacion = document.getElementById("operacion").value;
+
+        fetch(apiUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                Operacion: operacion,
+                Resultado: 0, // El cálculo debería realizarse en el backend
+                FechaRegistro: new Date().toISOString(),
+                HoraRegistro: new Date().toLocaleTimeString()
+            })
+        })
+        .then(response => {
+            if (response.ok) {
+                alert("Cálculo agregado correctamente.");
+                cargarCalculos(apiUrl); // Actualizar la lista de cálculos
+                document.getElementById("addCalculoForm").reset(); // Limpiar el formulario
+            } else {
+                alert("Error al agregar el cálculo.");
+            }
+        })
+        .catch(error => console.error("Error al agregar cálculo:", error));
+    });
+</script>

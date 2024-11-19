@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rlope\\Downloads\\Proyecto-Alterna\\Proyecto-Alterna\\Proyecto.2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|c:\\users\\rlope\\downloads\\proyecto-alterna\\proyecto-alterna\\proyecto.2\\proyecto.2\\controllers\\historialcalculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|solutionrelative:proyecto.2\\controllers\\historialcalculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|C:\\Users\\rlope\\Downloads\\Proyecto-Alterna\\Proyecto-Alterna\\Proyecto.2\\proyecto.2\\views\\historialcalculos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|solutionrelative:proyecto.2\\views\\historialcalculos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|C:\\Users\\rlope\\Downloads\\Proyecto-Alterna\\Proyecto-Alterna\\Proyecto.2\\proyecto.2\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|solutionrelative:proyecto.2\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|C:\\Users\\rlope\\Downloads\\Proyecto-Alterna\\Proyecto-Alterna\\Proyecto.2\\proyecto.2\\models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|solutionrelative:proyecto.2\\models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|C:\\Users\\rlope\\Downloads\\Proyecto-Alterna\\Proyecto-Alterna\\Proyecto.2\\proyecto.2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|solutionrelative:proyecto.2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\rlope\\Downloads\\Proyecto-Alterna\\Proyecto-Alterna\\Proyecto.2\\Proyecto.2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Proyecto.2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\rlope\\Downloads\\Proyecto-Alterna\\Proyecto-Alterna\\Proyecto.2\\Proyecto.2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Proyecto.2\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T04:28:10.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "C:\\Users\\rlope\\Downloads\\Proyecto-Alterna\\Proyecto-Alterna\\Proyecto.2\\Proyecto.2\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "Proyecto.2\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "C:\\Users\\rlope\\Downloads\\Proyecto-Alterna\\Proyecto-Alterna\\Proyecto.2\\Proyecto.2\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "Proyecto.2\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T04:27:34.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rlope\\Downloads\\Proyecto-Alterna\\Proyecto-Alterna\\Proyecto.2\\Proyecto.2\\Views\\HistorialCalculos\\Index.cshtml",
+              "RelativeDocumentMoniker": "Proyecto.2\\Views\\HistorialCalculos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rlope\\Downloads\\Proyecto-Alterna\\Proyecto-Alterna\\Proyecto.2\\Proyecto.2\\Views\\HistorialCalculos\\Index.cshtml",
+              "RelativeToolTip": "Proyecto.2\\Views\\HistorialCalculos\\Index.cshtml",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAkwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T04:06:21.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HistorialCalculosController.cs",
+              "DocumentMoniker": "C:\\Users\\rlope\\Downloads\\Proyecto-Alterna\\Proyecto-Alterna\\Proyecto.2\\Proyecto.2\\Controllers\\HistorialCalculosController.cs",
+              "RelativeDocumentMoniker": "Proyecto.2\\Controllers\\HistorialCalculosController.cs",
+              "ToolTip": "C:\\Users\\rlope\\Downloads\\Proyecto-Alterna\\Proyecto-Alterna\\Proyecto.2\\Proyecto.2\\Controllers\\HistorialCalculosController.cs",
+              "RelativeToolTip": "Proyecto.2\\Controllers\\HistorialCalculosController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAlwBsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T17:00:33.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Model1.cs",
+              "DocumentMoniker": "C:\\Users\\rlope\\Downloads\\Proyecto-Alterna\\Proyecto-Alterna\\Proyecto.2\\Proyecto.2\\Models\\Model1.cs",
+              "RelativeDocumentMoniker": "Proyecto.2\\Models\\Model1.cs",
+              "ToolTip": "C:\\Users\\rlope\\Downloads\\Proyecto-Alterna\\Proyecto-Alterna\\Proyecto.2\\Proyecto.2\\Models\\Model1.cs",
+              "RelativeToolTip": "Proyecto.2\\Models\\Model1.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T16:56:31.731Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

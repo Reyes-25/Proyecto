@@ -1,51 +1,46 @@
 ﻿@model IEnumerable<Proyecto._2.Models.HistorialCalculos>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Historial de Cálculos";
 }
 
-<h2>Index</h2>
+<h2>@ViewBag.Title</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <!-- Enlaces para filtrar las operaciones -->
+    @Html.ActionLink("Ver todas las Sumas", "Sumas") |
+    @Html.ActionLink("Ver todas las Restas", "Restas") |
+    @Html.ActionLink("Ver todas las Multiplicaciones", "Multiplicaciones") |
+    @Html.ActionLink("Ver todas las Divisiones", "Divisiones") |
+    @Html.ActionLink("Filtrar por Fecha", "PorFecha")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Operacion)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Resultado)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FechaRegistro)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.HoraRegistro)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Operacion)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Resultado)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.FechaRegistro)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.HoraRegistro)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
-
+<!-- Tabla de historial de cálculos -->
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Operacion)</th>
+            <th>@Html.DisplayNameFor(model => model.Resultado)</th>
+            <th>@Html.DisplayNameFor(model => model.FechaRegistro)</th>
+            <th>@Html.DisplayNameFor(model => model.HoraRegistro)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Operacion)</td>
+                <td>@Html.DisplayFor(modelItem => item.Resultado)</td>
+                <td>@Html.DisplayFor(modelItem => item.FechaRegistro)</td>
+                <td>@Html.DisplayFor(modelItem => item.HoraRegistro)</td>
+                <td>
+                    <!-- Enlaces para Editar, Detallar y Eliminar -->
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
