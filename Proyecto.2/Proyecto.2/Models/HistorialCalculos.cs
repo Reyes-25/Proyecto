@@ -1,24 +1,13 @@
+using System;
+
 namespace Proyecto._2.Models
 {
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
-
-    public partial class HistorialCalculos
+    public class HistorialCalculos
     {
-        public int Id { get; set; }
-
-        [Required]
-        [StringLength(50)]
-        public string Operacion { get; set; }
-
-        public double Resultado { get; set; }
-
-        [Column(TypeName = "date")]
-        public DateTime FechaRegistro { get; set; }
-
-        public TimeSpan HoraRegistro { get; set; }
+        public int Id { get; set; } // Identificador único
+        public string Operacion { get; set; } // Operación matemática (ej. "2+2")
+        public double Resultado { get; set; } // Resultado de la operación
+        public DateTime FechaRegistro { get; set; } // Fecha del cálculo
+        public TimeSpan HoraRegistro { get; set; } // Hora del cálculo
     }
 }

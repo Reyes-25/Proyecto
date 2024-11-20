@@ -1,127 +1,75 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Linq;
-using System.Net;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Http;
 using Proyecto._2.Models;
 
 namespace Proyecto._2.Controllers
 {
-    public class HistorialCalculosController : Controller
+    [RoutePrefix("api/HistorialCalculos")]
+    public class HistorialCalculosApiController : ApiController
     {
         private Model1 db = new Model1();
 
-        // GET: HistorialCalculos
-        public ActionResult Index()
+        [HttpGet]
+        [Route("Todos")]
+        public IHttpActionResult GetTodos()
         {
-            return View(db.HistorialCalculos.ToList());
+            var calculos = db.HistorialCalculos.ToList();
+            return Ok(calculos);
         }
 
-        // GET: HistorialCalculos/Details/5
-        public ActionResult Details(int? id)
+        [HttpGet]
+        [Route("Sumas")]
+        public IHttpActionResult GetSumas()
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            HistorialCalculos historialCalculos = db.HistorialCalculos.Find(id);
-            if (historialCalculos == null)
-            {
-                return HttpNotFound();
-            }
-            return View(historialCalculos);
+            var sumas = db.HistorialCalculos.Where(c => c.Operacion.Contains("+")).ToList();
+            return Ok(sumas);
         }
 
-        // GET: HistorialCalculos/Create
-        public ActionResult Create()
+        [HttpGet]
+        [Route("Restas")]
+        public IHttpActionResult GetRestas()
         {
-            return View();
+            var restas = db.HistorialCalculos.Where(c => c.Operacion.Contains("-")).ToList();
+            return Ok(restas);
         }
 
-        // POST: HistorialCalculos/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpGet]
+        [Route("Multiplicaciones")]
+        public IHttpActionResult GetMultiplicaciones()
+        {
+            var multiplicaciones = db.HistorialCalculos.Where(c => c.Operacion.Contains("*")).ToList();
+            return Ok(multiplicaciones);
+        }
+
+        [HttpGet]
+        [Route("Divisiones")]
+        public IHttpActionResult GetDivisiones()
+        {
+            var divisiones = db.HistorialCalculos.Where(c => c.Operacion.Contains("/")).ToList();
+            return Ok(divisiones);
+        }
+
+        [HttpGet]
+        [Route("Filtrado")]
+        public IHttpActionResult GetFiltrado(string criterio)
+        {
+            var filtrados = db.HistorialCalculos
+                .Where(c => c.Operacion.Contains(criterio))
+                .ToList();
+            return Ok(filtrados);
+        }
+
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Operacion,Resultado,FechaRegistro,HoraRegistro")] HistorialCalculos historialCalculos)
+        [Route("Crear")]
+        public IHttpActionResult PostCalculo(HistorialCalculos calculo)
         {
-            if (ModelState.IsValid)
-            {
-                db.HistorialCalculos.Add(historialCalculos);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-            return View(historialCalculos);
-        }
-
-        // GET: HistorialCalculos/Edit/5
-        public ActionResult Edit(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            HistorialCalculos historialCalculos = db.HistorialCalculos.Find(id);
-            if (historialCalculos == null)
-            {
-                return HttpNotFound();
-            }
-            return View(historialCalculos);
-        }
-
-        // POST: HistorialCalculos/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Operacion,Resultado,FechaRegistro,HoraRegistro")] HistorialCalculos historialCalculos)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(historialCalculos).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(historialCalculos);
-        }
-
-        // GET: HistorialCalculos/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            HistorialCalculos historialCalculos = db.HistorialCalculos.Find(id);
-            if (historialCalculos == null)
-            {
-                return HttpNotFound();
-            }
-            return View(historialCalculos);
-        }
-
-        // POST: HistorialCalculos/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            HistorialCalculos historialCalculos = db.HistorialCalculos.Find(id);
-            db.HistorialCalculos.Remove(historialCalculos);
+            db.HistorialCalculos.Add(calculo);
             db.SaveChanges();
-            return RedirectToAction("Index");
-        }
 
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
+            return Ok(calculo);
         }
     }
 }
