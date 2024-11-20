@@ -245,6 +245,11 @@
     <Content Include="Views\HistorialCalculos\Details.cshtml" />
     <Content Include="Views\HistorialCalculos\Edit.cshtml" />
     <Content Include="Views\HistorialCalculos\Index.cshtml" />
+    <Content Include="Views\HistorialCalculos\Sumas.cshtml" />
+    <Content Include="Views\HistorialCalculos\Restas.cshtml" />
+    <Content Include="Views\HistorialCalculos\Multiplicaciones.cshtml" />
+    <Content Include="Views\HistorialCalculos\Divisiones.cshtml" />
+    <Content Include="Views\HistorialCalculos\PorFecha.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
