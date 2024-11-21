@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|c:\\users\\amirr\\source\\repos\\proyecto1\\proyecto.2\\controllers\\historialcalculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|c:\\users\\amirr\\source\\repos\\proyecto1\\proyecto.2\\controllers\\historialcalculosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|solutionrelative:proyecto.2\\controllers\\historialcalculosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|C:\\Users\\amirr\\source\\repos\\Proyecto1\\proyecto.2\\controllers\\historialcalculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|solutionrelative:proyecto.2\\controllers\\historialcalculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|C:\\Users\\amirr\\source\\repos\\Proyecto1\\proyecto.2\\views\\historialcalculos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|solutionrelative:proyecto.2\\views\\historialcalculos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|c:\\users\\amirr\\source\\repos\\proyecto1\\proyecto.2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|solutionrelative:proyecto.2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|C:\\Users\\amirr\\source\\repos\\Proyecto1\\proyecto.2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|solutionrelative:proyecto.2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|C:\\Users\\amirr\\source\\repos\\Proyecto1\\proyecto.2\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|solutionrelative:proyecto.2\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|C:\\Users\\amirr\\source\\repos\\Proyecto1\\proyecto.2\\models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|solutionrelative:proyecto.2\\models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|C:\\Users\\amirr\\source\\repos\\Proyecto1\\proyecto.2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|solutionrelative:proyecto.2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|C:\\Users\\amirr\\source\\repos\\Proyecto1\\proyecto.2\\models\\historialcalculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA00BCC-6501-42C6-829B-B6C02BDEE4B0}|Proyecto.2\\Proyecto.2.csproj|solutionrelative:proyecto.2\\models\\historialcalculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,64 +66,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Proyecto.2\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Proyecto.2\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T04:28:10.858Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WebApiConfig.cs",
-              "DocumentMoniker": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\App_Start\\WebApiConfig.cs",
-              "RelativeDocumentMoniker": "Proyecto.2\\App_Start\\WebApiConfig.cs",
-              "ToolTip": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\App_Start\\WebApiConfig.cs",
-              "RelativeToolTip": "Proyecto.2\\App_Start\\WebApiConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T04:27:34.034Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\Views\\HistorialCalculos\\Index.cshtml",
-              "RelativeDocumentMoniker": "Proyecto.2\\Views\\HistorialCalculos\\Index.cshtml",
-              "ToolTip": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\Views\\HistorialCalculos\\Index.cshtml",
-              "RelativeToolTip": "Proyecto.2\\Views\\HistorialCalculos\\Index.cshtml",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAkwGwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T04:06:21.281Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "HistorialCalculosController.cs",
               "DocumentMoniker": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\Controllers\\HistorialCalculosController.cs",
               "RelativeDocumentMoniker": "Proyecto.2\\Controllers\\HistorialCalculosController.cs",
               "ToolTip": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\Controllers\\HistorialCalculosController.cs",
               "RelativeToolTip": "Proyecto.2\\Controllers\\HistorialCalculosController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAQwBsAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAWwBQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T17:00:33.532Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Model1.cs",
-              "DocumentMoniker": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\Models\\Model1.cs",
-              "RelativeDocumentMoniker": "Proyecto.2\\Models\\Model1.cs",
-              "ToolTip": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\Models\\Model1.cs",
-              "RelativeToolTip": "Proyecto.2\\Models\\Model1.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "HistorialCalculosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\amirr\\Source\\Repos\\Proyecto1\\Proyecto.2\\Controllers\\HistorialCalculosRepository.cs",
+              "RelativeDocumentMoniker": "Proyecto.2\\Controllers\\HistorialCalculosRepository.cs",
+              "ToolTip": "C:\\Users\\amirr\\Source\\Repos\\Proyecto1\\Proyecto.2\\Controllers\\HistorialCalculosRepository.cs",
+              "RelativeToolTip": "Proyecto.2\\Controllers\\HistorialCalculosRepository.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAYwEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T16:56:31.731Z"
+              "WhenOpened": "2024-11-21T14:50:12.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\Web.config",
+              "RelativeDocumentMoniker": "Proyecto.2\\Web.config",
+              "ToolTip": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\Web.config",
+              "RelativeToolTip": "Proyecto.2\\Web.config",
+              "ViewState": "AgIAAEkAAAAA2at+UaQpwEQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-21T15:20:44.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Proyecto.2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Proyecto.2\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T04:28:10.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "Proyecto.2\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "Proyecto.2\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAcwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T04:27:34.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HistorialCalculos.cs",
+              "DocumentMoniker": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\Models\\HistorialCalculos.cs",
+              "RelativeDocumentMoniker": "Proyecto.2\\Models\\HistorialCalculos.cs",
+              "ToolTip": "C:\\Users\\amirr\\source\\repos\\Proyecto1\\Proyecto.2\\Models\\HistorialCalculos.cs",
+              "RelativeToolTip": "Proyecto.2\\Models\\HistorialCalculos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T22:09:06.177Z",
+              "EditorCaption": ""
             }
           ]
         }

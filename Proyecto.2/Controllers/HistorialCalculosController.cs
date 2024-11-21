@@ -7,13 +7,18 @@ namespace Proyecto._2.Controllers
     [RoutePrefix("api/HistorialCalculos")]
     public class HistorialCalculosApiController : ApiController
     {
-        private Model1 db = new Model1();
+        private readonly HistorialCalculosRepository _repository;
+
+        public HistorialCalculosApiController()
+        {
+            _repository = new HistorialCalculosRepository();
+        }
 
         [HttpGet]
         [Route("Todos")]
         public IHttpActionResult GetTodos()
         {
-            var calculos = db.HistorialCalculos.ToList();
+            var calculos = _repository.GetTodos();
             return Ok(calculos);
         }
 
@@ -21,7 +26,7 @@ namespace Proyecto._2.Controllers
         [Route("Sumas")]
         public IHttpActionResult GetSumas()
         {
-            var sumas = db.HistorialCalculos.Where(c => c.Operacion.Contains("+")).ToList();
+            var sumas = _repository.GetSumas();
             return Ok(sumas);
         }
 
@@ -29,7 +34,7 @@ namespace Proyecto._2.Controllers
         [Route("Restas")]
         public IHttpActionResult GetRestas()
         {
-            var restas = db.HistorialCalculos.Where(c => c.Operacion.Contains("-")).ToList();
+            var restas = _repository.GetRestas();
             return Ok(restas);
         }
 
@@ -37,7 +42,7 @@ namespace Proyecto._2.Controllers
         [Route("Multiplicaciones")]
         public IHttpActionResult GetMultiplicaciones()
         {
-            var multiplicaciones = db.HistorialCalculos.Where(c => c.Operacion.Contains("*")).ToList();
+            var multiplicaciones = _repository.GetMultiplicaciones();
             return Ok(multiplicaciones);
         }
 
@@ -45,31 +50,8 @@ namespace Proyecto._2.Controllers
         [Route("Divisiones")]
         public IHttpActionResult GetDivisiones()
         {
-            var divisiones = db.HistorialCalculos.Where(c => c.Operacion.Contains("/")).ToList();
+            var divisiones = _repository.GetDivisiones();
             return Ok(divisiones);
-        }
-
-        [HttpGet]
-        [Route("Filtrado")]
-        public IHttpActionResult GetFiltrado(string criterio)
-        {
-            var filtrados = db.HistorialCalculos
-                .Where(c => c.Operacion.Contains(criterio))
-                .ToList();
-            return Ok(filtrados);
-        }
-
-        [HttpPost]
-        [Route("Crear")]
-        public IHttpActionResult PostCalculo(HistorialCalculos calculo)
-        {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            db.HistorialCalculos.Add(calculo);
-            db.SaveChanges();
-
-            return Ok(calculo);
         }
     }
 }
